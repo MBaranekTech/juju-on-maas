@@ -85,3 +85,22 @@ juju controllers
 ```
 <img width="1188" height="67" alt="image" src="https://github.com/user-attachments/assets/14415762-4ba6-413e-b06a-3a9907e055da" />
 
+## ⚙️ Step 5: Add a new machine - Request one from MAAS and install Nginx
+```bash
+juju deploy nginx --constraints "arch=amd64"
+
+This will:
+Allocate a machine from MAAS (or reuse one if available)
+Install Ubuntu
+Install and configure Nginx automatically
+```
+## ⚙️ Step 6: Check deployment status
+```bash
+juju status
+```
+<img width="1147" height="339" alt="image" src="https://github.com/user-attachments/assets/18c3d62e-befc-4bbc-9e64-019392d50db0" />
+
+## ⚙️ Step 6: Verify Nginx 
+<img width="896" height="317" alt="image" src="https://github.com/user-attachments/assets/93b46aa7-6c2b-406b-9e04-1875a4179621" />
+
+
