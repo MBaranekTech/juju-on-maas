@@ -103,4 +103,12 @@ juju status
 ## ⚙️ Step 6: Verify Nginx 
 <img width="896" height="317" alt="image" src="https://github.com/user-attachments/assets/93b46aa7-6c2b-406b-9e04-1875a4179621" />
 
+If you want to remove machine with Nginx via Juju
+```bash
+juju remove-unit nginx/3
+```
+After command in Maas server machine will change from Deployed to Ready state
+<img width="1949" height="147" alt="image" src="https://github.com/user-attachments/assets/e72e4e2c-c01a-4891-8696-8fc372ef06e0" />
+
+
 
